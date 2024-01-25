@@ -1,6 +1,3 @@
 # lilsbill.github.io
 
-
-
-
-# hi
+# Hello
