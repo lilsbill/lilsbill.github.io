@@ -15,7 +15,7 @@ body {
     font-size: 1.3em;
   }
   
-  p,ul,ol,dl,address {
+  p,ul,ol,dl,address, dd, dt {
     font-size: 1.1em;
   }
   
