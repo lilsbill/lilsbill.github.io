@@ -8,10 +8,12 @@ p
     color:rgb(0, 0, 0);
 }
 
-.topnav {
-    background-color: rgb(1, 171, 228);
-    overflow: hidden;
-  }
+.topnav 
+{
+  background-color: rgb(1, 171, 228);
+  overflow: hidden;
+  text-align: center;
+}
   
   /* Style the links inside the navigation bar */
   .topnav a 
@@ -100,6 +102,7 @@ p
     margin-top: 5%;
     text-align: center;
     transform: scale(150%);
+    font-family: "Lucida Console", "Courier New", monospace;
   }
 
   nav

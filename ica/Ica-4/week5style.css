@@ -1,0 +1,26 @@
+p
+{
+    background-color: aqua;
+    font-size: 100px;
+    color: blue;
+    text-align: center;
+}
+
+h1
+{
+    background-color: purple;
+    text-align: center;
+    font-size: 200px;
+}
+
+div
+{
+    border: 1px solid black;
+}
+
+.name
+{
+    border: 10px dashed red;
+    text-align: center;
+    font-size: 50px;
+}
