@@ -26,10 +26,20 @@ html {
   border-radius: 1.5em 1.5em 0 0;
 }
 
+p
+{
+  color: azure;
+}
+
 .card footer
 {
   background-image: linear-gradient(to bottom,rgba(215, 215, 215, 0), rgba(0, 0, 0, 0.1));
   border-radius: 0 0 1.5em 1.5em;
+  p
+  {
+    font-size: 1.5em;
+    color: black;
+  }
 }
 
 .card article img
@@ -40,8 +50,10 @@ html {
 
 .card header, .card footer
 {
-  height: 30px;
-  padding: 10px, 10px, 10px, 10px;
+  height: 5em;
+  padding: 1em, 1em, 1em, 1em;
+  line-height: 5em;
+  padding-left: 1em;
 }
 
 h2, p
@@ -49,8 +61,85 @@ h2, p
   margin: 0;
 }
 
+h2
+{
+  font-size: 2em;
+  height: 30px;
+}
+
+
+
 article
 {
-  height: 120px;
-  background-color: rgb(83, 82, 82), 50%;
+  color: white;
+  height: 12em;
+  background-color: rgba(0, 0, 0, 0.3);
+  p
+  {
+    padding-top: 1em;
+    padding-left: 1em;
+    line-height: 1.4em;
+  }
+  
+}
+
+
+
+
+.lily
+{
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: rgb(0, 145, 255);
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.lily header
+{
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(115, 107, 107, 0));
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+p
+{
+  color: azure;
+}
+
+.lily footer
+{
+  background-image: linear-gradient(to bottom,rgba(215, 215, 215, 0), rgba(0, 0, 0, 0.1));
+  border-radius: 0 0 1.5em 1.5em;
+  p
+  {
+    font-size: 1.18em;
+    font-weight:  bold;
+    color: black;
+  }
+}
+
+.lily article img
+{
+  max-height: 100%;
+  float: right;
+}
+
+.lily header, .lily footer
+{
+  height: 5em;
+  padding: 1em, 1em, 1em, 1em;
+  line-height: 5em;
+  padding-left: 1em;
+}
+
+.lily article
+{
+  p
+  {
+    padding-top: 1.5em;
+    font-size: 1.2em;
+  }
+  
 }
