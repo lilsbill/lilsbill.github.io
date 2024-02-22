@@ -1,0 +1,77 @@
+body
+{
+   background: url(soccer.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
+div
+{
+    border: 2px solid rgb(0, 0, 0);
+    width: 400px;
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+    color: aliceblue;
+
+    position: absolute;
+    left: 5px;
+    right: 10px;
+    top: 350px;
+    bottom: 10px;
+    font-weight: bold;
+}
+
+.box1
+{
+    border: 0px;
+    width: 100px;
+    height: fit-content;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+
+    bottom: 10px;
+    background-color: rgb(2, 139, 0);
+    text-align: center;
+}
+
+.box2
+{
+    border: 0px;
+    width: 100px;
+    height: fit-content;
+    left: 285px;
+    right: 10px;
+    top: 10px;
+
+    bottom: 10px;
+    background-color: rgb(78, 43, 255);
+    text-align: center;
+}
+
+.box3
+{
+    border: 0px;
+    width: 120px;
+    height: fit-content;
+    left: 135px;
+    right: 10px;
+    top: 10px;
+
+    bottom: 10px;
+    background-color: rgb(57, 57, 75);
+    text-align: center;   
+}
+
+.name
+{
+    left: 780px;
+    top: 12px;
+    width: 100px;
+    height: fit-content;
+    text-align: center;
+    background-color: rgba(247, 248, 242, 0.2);
+    color: aliceblue;
+    border: 0px;
+}
