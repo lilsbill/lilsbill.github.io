@@ -8,16 +8,16 @@ body
 
 div
 {
-    border: 2px solid rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
     width: 400px;
     height: 90px;
     background-color: rgb(255, 255, 255);
     color: aliceblue;
 
     position: absolute;
-    left: 5px;
+    left: 30px;
     right: 10px;
-    top: 350px;
+    top: 600px;
     bottom: 10px;
     font-weight: bold;
 }
@@ -66,11 +66,13 @@ div
 
 .name
 {
-    left: 780px;
+    left: 1200px;
     top: 12px;
-    width: 100px;
+    width: 200px;
     height: fit-content;
     text-align: center;
+
+    font-size: 35px;
     background-color: rgba(247, 248, 242, 0.2);
     color: aliceblue;
     border: 0px;
