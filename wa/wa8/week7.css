@@ -1,0 +1,72 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(117, 221, 255);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+nav
+{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: rgb(206, 73, 255);
+}
+
+nav a
+{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+
+img
+{
+    width:40vw;
+    height: 80vh;
+
+    animation-name: animateImage;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#red-ball
+{
+    background-color: rgb(0, 0, 0);
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+    transition-duration: 3s;
+}
+
+#red-ball:hover
+{
+    background-color: rgb(0, 255, 81);
+    width: 120px;
+    height: 120px;
+}
+
+@keyframes animateImage
+{
+    0%
+    {
+        margin-left: 100%;
+    }
+    50%
+    {
+        margin: 0%;
+    }
+    100%
+    {
+        margin-right: 100%;
+    }
+}
