@@ -1,0 +1,107 @@
+body
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.text
+{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+h1
+{
+   font-size: 100px;
+   left: 50%;
+   text-align: center;
+   top: 50%;
+}
+
+.grid-container 
+{
+    display: grid;
+    gap: 50px 100px;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.date
+{
+    background-color: rgb(174, 174, 255);
+    height: 500px;
+    width: 350px;
+    overflow: auto;
+}
+
+.ticket
+{
+    background-color: rgb(174, 174, 255);
+    height: 500px;
+    width: 900px;
+    overflow: auto;
+}
+
+.ticket h2,.ticket p,.ticket h3
+{
+    display: none;
+    transition: visibility 0.5s ease, opacity 0.5s ease;
+}
+
+.ticket:hover h2,.ticket:hover p,.ticket:hover h3
+{
+    display: block;
+    transition-delay: .5s;
+}
+
+.ticket:hover .text
+{
+    display: none;
+    transition-delay: 1s;
+}
+
+.text
+{
+    transition: visibility 0.5s ease, opacity 0.5s ease;
+}
+
+@media (max-width: 400px) 
+{
+    .date
+    {
+        background-color: rgb(151, 151, 151);
+        height: 70px;
+        width: 70px;
+        overflow: auto;
+    }
+
+    h1
+    {
+        font-size: 20px;
+        left: 50%;
+        text-align: center;
+        top: 50%;
+    }
+
+    .ticket
+    {
+        background-color: rgb(186, 186, 186);
+        height: 70px;
+        width: 250px;
+        overflow: auto;
+    }
+
+    h2
+    {
+        font-size: 8px;
+    }
+
+    .grid-container 
+    {
+        display: grid;
+        gap: 10px 20px;
+    }
+
+}
+
+

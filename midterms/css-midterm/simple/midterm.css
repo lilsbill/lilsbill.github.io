@@ -1,0 +1,97 @@
+h1 {
+    font-size: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+h3 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+p {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ticket-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ticket {
+    width: calc(50% - 20px); /* Adjusted width */
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    margin: 20px; /* Added margin */
+    position: relative;
+    z-index: 1;
+}
+
+.tickets {
+    width: 1200px; /* Adjusted width */
+    height: calc(100vh - 40px); /* Adjusted height */
+    background-color: #b3b3b3;
+    margin: 20px; /* Added margin */
+    transition-duration: 1s;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 0; /* Added z-index */
+}
+
+.hideText {
+    width: calc(100% - 40px); /* Adjusted width */
+    height: 50vh; /* Adjusted height */
+    position: relative;
+    z-index: 2; /* Added z-index */
+}
+
+.hideText:hover {
+    height: 80vh;
+}
+
+.hideText h3,
+.hideText p {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.hideText:hover h3,
+.hideText:hover p {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tickets:hover {
+    background-color: rgb(156, 243, 156);
+    width: 70vw;
+    height: 80vh;
+}
+
+.Textright {
+    text-align: right;
+    position: absolute;
+    right: 70px;
+    top: 50%; /* Adjusted position */
+    transform: translateY(-50%); /* Center vertically */
+    z-index: 3; /* Added z-index */
+}
+
+.Textright h1 {
+    font-size: 100px;
+}
+
+.Textright h2 {
+    font-size: 60px;
+}

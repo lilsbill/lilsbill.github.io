@@ -1,0 +1,104 @@
+h1
+{
+    font-size: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+h2
+{
+    font-size: 60px;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+h3
+{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+p
+{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#ticket1, #ticket2, #ticket3, #ticket4, #ticket5, #ticket6,#ticket7,#ticket8,#ticket9
+{
+    width: 98vw;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    left: 30px;
+    right: 10px;
+    top: 40px;
+    position: relative;
+}
+
+
+#tickets1, #tickets2, #tickets3, #tickets4, #tickets5, #tickets6,#ticket7,#ticket8,#ticket9
+{
+    
+    width: 70vw;
+    height: 100vh;
+    background-color: #b3b3b3;
+    left: 30px;
+    right: 10px;
+    top: 40px;
+    transition-duration: 1s;
+    padding-bottom: 100px;
+}
+
+#hideText, #hideText2, #hideText3,
+#hideText4, #hideText5, #hideText6,#hideText7,#hideText8,#hideText9
+{
+    width: 70vw;
+    height: 50vh;
+    position: relative;
+}
+
+#hideText:hover, #hideText2:hover, #hideText3:hover, #hideText4:hover, #hideText5:hover, #hideText6:hover,#hideText7:hover,#hideText8:hover,#hideText9:hover {
+    height: 80vh; /* Adjusted height on hover */
+}
+
+#hideText h3, #hideText p, #hideText2 h3, #hideText2 p,
+#hideText3 h3, #hideText3 p, #hideText4 h3,
+#hideText4 p, #hideText5 h3, #hideText5 p,
+#hideText6 h3, #hideText6 p,#hideText7 h3, #hideText7 p ,#hideText8 h3, #hideText8 p,#hideText9 h3, #hideText9 p  
+{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+#hideText:hover h3, #hideText:hover p, #hideText2:hover h3, #hideText2:hover p,
+#hideText3:hover h3, #hideText3:hover p, #hideText4:hover h3, #hideText4:hover p, #hideText5:hover h3, #hideText5:hover p, 
+#hideText6:hover h3, #hideText6:hover p ,#hideText7:hover h3, #hideText7:hover p ,#hideText8:hover h3, #hideText8:hover p ,
+#hideText9:hover h3, #hideText9:hover p 
+{
+    visibility: visible; 
+    opacity: 1;
+}
+
+#tickets1:hover, #tickets2:hover, #tickets3:hover, #tickets4:hover, #tickets5:hover, #tickets6:hover,#tickets7:hover,#tickets8:hover,#tickets9:hover
+{
+    background-color: rgb(156, 243, 156);
+    width: 70vw;
+    height: 80vh;
+}
+
+#Textright, #Textright2, #Textright3, #Textright4, #Textright5, #Textright6,#Textright7,#Textright8,#Textright9
+{
+    text-align: right;
+    position: absolute;
+    right: 70px;
+    top: 170px;
+}
+
+#Textright h1, #Textright2 h1, #Textright3 h1, #Textright4 h1, #Textright5 h1, #Textright6 h1 ,#Textright7 h1 ,#Textright8 h1 ,#Textright9 h1 
+{
+    font-size: 100px;
+}
