@@ -16,10 +16,26 @@ h1
    left: 50%;
    text-align: center;
    top: 50%;
+   padding: 20px;
+}
+
+.ticket h1, .date h1
+{
+    font-size: 60px;
+    left: 50%;
+    text-align: center;
+    top: 50%;
+    padding: 20px;
+}
+
+h2
+{
+    padding: 20px;
 }
 
 .grid-container 
 {
+    padding-left: 25px;
     display: grid;
     gap: 50px 100px;
     grid-template-columns: 1fr 6fr;
@@ -29,7 +45,7 @@ h1
 .date
 {
     background-color: rgb(174, 174, 255);
-    height: 500px;
+    height: 300px;
     width: 350px;
     overflow: auto;
 }
@@ -37,9 +53,11 @@ h1
 .ticket
 {
     background-color: rgb(174, 174, 255);
-    height: 500px;
+    height: 300px;
     width: 900px;
     overflow: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .ticket h2,.ticket p,.ticket h3
