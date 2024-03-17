@@ -3,6 +3,43 @@ body
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+nav 
+{
+    background-color: rgb(174, 174, 255);
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+  
+nav ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+nav ul li 
+{
+    float: left;
+}
+
+nav ul li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    text-decoration: none;
+}
+  
+nav ul li a:hover 
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(174, 174, 255);
+}
+
+
 .text
 {
     display: flex;
@@ -58,6 +95,7 @@ h2
     overflow: auto;
     padding-left: 10px;
     padding-right: 10px;
+    transition: width 0.5s ease, height 0.5s ease;
 }
 
 .ticket h2,.ticket p,.ticket h3
@@ -76,6 +114,12 @@ h2
 {
     display: none;
     transition-delay: 1s;
+    height: 400px;
+}
+
+.ticket:hover
+{ 
+    height: 650px;
 }
 
 .text
@@ -83,14 +127,53 @@ h2
     transition: visibility 0.5s ease, opacity 0.5s ease;
 }
 
-@media (max-width: 400px) 
+.footer
+{
+    padding-top: 100px;
+}
+
+
+footer p 
+{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+footer nav ul li a:hover 
+{
+    text-decoration: underline;
+}
+
+.footer nav ul li a p
+{
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+
+
+
+@media (max-width: 500px) 
 {
     .date
     {
         background-color: rgb(151, 151, 151);
-        height: 70px;
-        width: 70px;
-        overflow: auto;
+        height: 40px;
+        width: 270px;
+        overflow: hidden;
+    }
+    
+    .date h1
+    {
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text h1
+    {
+        font-size: 10px;
     }
 
     h1
@@ -107,6 +190,17 @@ h2
         height: 70px;
         width: 250px;
         overflow: auto;
+        font-size: 10px;
+    }
+
+    .ticket:hover
+    { 
+        height: 70px;
+    }
+
+    .ticket h2
+    {
+        font-size: 10px;
     }
 
     h2
@@ -118,6 +212,8 @@ h2
     {
         display: grid;
         gap: 10px 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 2fr .5fr 1fr .5fr 1fr .5fr 1fr .5fr 1fr .5fr 1fr .5fr 1fr .5fr 1fr;
     }
 
 }
