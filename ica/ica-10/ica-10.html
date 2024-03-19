@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button
+        {
+            width: 1000px;
+            height: 300px;
+            font-size: 100px;
+            background-color: rgb(122, 122, 255);
+        }
+        body
+        {
+            background-color: rgb(136, 235, 255);
+        }
+        .name
+        {
+            height: 100px;
+            background-color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <button type="button" class="button1">PRESS ME</button>
+    <button type="button" class="button2">PRESS ME</button>
+    <script>
+        const x = 'hello';
+        console.log(x);
+
+        const button1 = document.querySelector(".button1");
+        const button2 = document.querySelector(".button2")
+        //const button2 = document.getElementById("button2");
+        button1.addEventListener('click', runFunction);
+        button2.addEventListener('click', runAgain);
+
+        const name = document.querySelector("h1")
+        button.addEventListener('click', runFunction);
+
+        function runFunction()
+        {
+            //console.log("test");
+            const word = prompt("WRITE SOMETHING");
+            button1.textContent = word;
+        }
+
+        function runAgain()
+        {
+            document.body.style.backgroundColor = "red";
+        }
+    </script>
+</body>
+</html>
