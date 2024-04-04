@@ -7,7 +7,7 @@ const overlay = document.querySelector('.overlay');
 /* Declaring the array of image filenames */
 const pics = ['./images/pic1.jpeg','./images/pic2.jpeg','./images/pic3.jpeg','./images/pic4.jpeg','./images/pic5.jpeg'];
 /* Declaring the alternative text for each image file */
-const alts = ["Eye", "Sand", "Flowers", "Egypt", "Butterfly"]
+const alts = ["Dog", "My Dog", "My dog being cute", "Adorable Doggo", "My dog is so cute"]
 /* Looping through images */
 for (let i = 0; i < 5; i++)
 {

@@ -4,8 +4,9 @@ h1 {
 }
 
 body {
-  width: 640px;
+  width: 500px;
   margin: 0 auto;
+  background-color: rgb(132, 204, 255);
 }
 
 .full-img {
@@ -17,17 +18,19 @@ body {
 
 .displayed-img
 {
-  width: 640px;
+  width: 500px;
   height: 600px;
+
 }
 
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 640px;
+  width: 500px;
   height: 600px;
   background-color: rgba(0,0,0,0);
+
 }
 
 button {
