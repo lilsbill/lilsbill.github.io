@@ -6,9 +6,7 @@ answerBtn.addEventListener('click', getAnswer);
 
 const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
 
-const answerText = document.querySelector('#js-answer
-
--text')
+const answerText = document.querySelector('#js-answer-text')
 
 let answer = '';
 
