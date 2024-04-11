@@ -10,7 +10,6 @@ const answerText = document.querySelector('#js-answer-text')
 
 let answer = '';
 
-
 async function getQuote()
 {
     try
