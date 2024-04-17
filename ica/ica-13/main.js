@@ -80,6 +80,12 @@ class Ball
                 if (distance < this.size + ball.size)
                 {
                     ball.color = this.color = randomRGB();
+                    //ball.velX = this.velX = -(this.velX);
+                    //ball.velY = this.velY = -(this.velY);
+                    this.velX = -this.velX;
+                    this.velY = -this.velY;
+                    ball.velX = -ball.velX;
+                    ball.velY = -ball.velY;
                 }
             }
         }
@@ -90,7 +96,7 @@ class Ball
 
 const balls = []
 
-while (balls.length < 25)
+while (balls.length < 50)
 {
     const size = random(1,20)
     const ball = new Ball (
