@@ -78,7 +78,7 @@ function typeAnswer()
 
     if (word == answer)
     {
-        newBtn.textContent = "correct";
+        //newBtn.textContent = "correct";
         volume += 10;
         newText.textContent = volume;
     }
@@ -86,7 +86,11 @@ function typeAnswer()
     {
         newBtn.textContent = "wrong";
         answerText.textContent = answer;
-        volume -= 10;
+        if (volume != 0)
+        {
+            volume -= 10;
+        }
+        
         //newText.textContent = "wrong?"
         newText.textContent = volume;
     }
