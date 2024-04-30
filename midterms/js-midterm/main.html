@@ -7,18 +7,38 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-	<h1>Increase the volume</h1>
 
-	<section class="Text">
-		<h2 id="update">0</h2>
-		<h2>%</h2>
-	</section>
-	
+	<div class="grid">
+		<div class="grid-item">
+			<h1>Current Volume:</h1>
+
+			<section class="Text">
+				<h2 id="update">0</h2>
+				<h2>%</h2>
+			</section>
+		</div>
+		
+		<div class="grid-item">
+			<h2>Count Down:</h2>
+			<section class="Timer">
+				<h2><div id="timer">00</div></h2>
+			  </section>
+
+		</div>
+
+
+  	</div>
+
+  <section class="answers">
+    <h1><div id="answer_yes"></div></h1>
+	<br>
+  </section>
+
 
     <div class="app">
-        <strong><header>Name the Character that said this quotes to increase volume<br><br>For the show The Office</header></strong>
-        
-        <h3>It is case sensitive and you must input the first and last name of each characters spelled exactly correct</h3>
+        <strong><header>Name the Character that said these quotes to increase volume<br><br>Quotes from: The Office</strong> <br>
+        <br>
+        <p>It is case sensitive and you must input the first and last name of each characters spelled exactly correct</p> </header>
         <section class="quotes">
         	<div class="quote-text" id="js-quote-text"></div>
         	<div class="quote-text" id="js-answer-text"></div>
@@ -26,7 +46,7 @@
         </section>
 
 		
-
+        
         <section class="controls" >
         	<button type="button" id="js-new-quote" class="new-quote button">
         		Generate a quote!
@@ -42,14 +62,18 @@
           <!---->
 
         	<button type="button" id="answer-btn" class="answer button">
-            	Answer
+            Answer
         	</button>
+
+          <button type="button" id="done" class="done button">
+            Done
+          </button>
           <!-- <a class="answer button" id="js-tweet" target="_blank" rel="noreferrer">Show me the answer!</a> -->
         </section>
         <!--<img id="character-image" src="officeimg.jpeg" alt="Character Image">-->
     
     </div>
 
-    <script src="main.js"></script>
+    <script src="edited_main.js"></script>
 </body>
 </html>

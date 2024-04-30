@@ -6,16 +6,36 @@ btn.addEventListener('click', getQuote);
 
 const totalTimeInSeconds = 10;
 
+var links = 
+[
+    "https://youtu.be/dQw4w9WgXcQ?si=RxDP0Ij90vM2m6IM",
+    "https://youtu.be/L_jWHffIx5E?si=3P1f5TdocLGtATcs",
+    "https://youtu.be/0mYBSayCsH0?si=HYpqIQEUZ0cmtoym",
+    "https://youtu.be/5tXh_MfrMe0?si=DpUOF8t6bUvRKc2B",
+    "https://youtu.be/4fndeDfaWCg?si=g8iN99SH1eMILLut",
+    // Add more URLs as needed
+];
+
+
 let remainingTimeInSeconds = totalTimeInSeconds;
 
-const timerInterval = setInterval(updateTimer, 1000);
+//const timerInterval = setInterval(updateTimer, 1000);
+
+let timerInterval;
 
 const newBtn = document.querySelector("#answer-btn");
 newBtn.addEventListener('click', typeAnswer);
 
+const doneBtn = document.querySelector("#done");
+doneBtn.addEventListener('click', doneFun);
+
 const endpoint = 'https://officeapi.akashrajpurohit.com/quote/random';
 
 const answerText = document.querySelector('#js-answer-text')
+
+const rightWrong = document.querySelector('#answer_yes')
+
+var playCounter = 0;
 
 let answer = '';
 let image = '';
@@ -26,10 +46,29 @@ let imageUrl = '';
 
 //image.src=jsonData[0]["url"]
 
+function doneFun()
+{
+    playCounter += 1;
+    var randomIndex = Math.floor(Math.random() * links.length);
+    var randomLink = links[randomIndex];
+
+    window.open(randomLink, '_blank');
+
+    if (playCounter == 5)
+    {
+        btn.disabled = true;
+        newBtn.disabled = true;
+        doneBtn.disabled = true;
+
+        document.body.innerHTML = '';
+    }
+}
+
 async function getQuote()
 {
     try
     {
+        clearInterval(timerInterval);
         remainingTimeInSeconds = totalTimeInSeconds;
 
         const response = await fetch(endpoint);
@@ -41,16 +80,23 @@ async function getQuote()
         const json = await response.json();
         console.log(json['quote']);
         displayQuote(json['quote']);
-        answer = json['character']
-        imageUrl = json['character_avatar_url']
+        answer = json['character'];
+        imageUrl = json['character_avatar_url'];
         answerText.textContent = 'Name the character';
         
+        startTimer();
+
     } 
     catch (err)
     {
         console.log(err);
         alert('FAILED to fetch new quote');
     }
+}
+
+function startTimer() 
+{
+    timerInterval = setInterval(updateTimer, 1000);
 }
 
 function getAnswer()
@@ -87,16 +133,26 @@ function typeAnswer()
     if (word == answer)
     {
         //newBtn.textContent = "correct";
-        volume += 10;
+        var randomNumber = Math.floor(Math.random() * 10) + 1;
+        volume += randomNumber;
         newText.textContent = volume;
+        rightWrong.textContent = "Correct";
     }
     else
     {
-        newBtn.textContent = "wrong";
+        rightWrong.textContent = "INCORRECT";
         answerText.textContent = answer;
         if (volume != 0)
         {
-            volume -= 10;
+            if (volume < 10)
+            {
+                volume = 0;
+            }
+            else
+            {
+                volume -= 10;
+            }
+            
         }
         
         //newText.textContent = "wrong?"
@@ -114,6 +170,13 @@ function updateTimer()
     {
         clearInterval(timerInterval); // Stop the timer
         document.getElementById('timer').textContent = 'Timer expired';
+
+        if (volume > 10)
+        {
+            volume -= 10;
+            document.getElementById('update').textContent = volume;
+        }
+
         return;
     }
 

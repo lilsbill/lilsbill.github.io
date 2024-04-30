@@ -3,12 +3,46 @@ html
     box-sizing: border-box;
 }
 
+p
+{
+    font-size: 20px;
+}
+
+.answers h1
+{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.grid 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Three columns of equal width */
+    grid-gap: 10px; /* Gap between grid items */
+
+}
+
+.grid-item 
+{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
 h1
 {
+    /* Gap between 
+    
     padding-left: 40px;
     padding-top: 20px;
+    
+    grid items */
+    
     font-size: 60px;
 }
+
+
 
 .Text h2
 {
@@ -17,7 +51,7 @@ h1
 
 .Text
 {
-    padding-left: 200px;
+    padding-left: 0px;
 }
 
 h2
@@ -48,10 +82,10 @@ body
 .app 
 {
     position: absolute;
-    top: 60%;
+    top: 550px;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 800px;
+    width: 1200px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
