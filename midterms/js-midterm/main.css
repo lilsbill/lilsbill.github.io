@@ -3,10 +3,74 @@ html
     box-sizing: border-box;
 }
 
+body
+{
+    background-image: url('officeimg.jpeg');
+    background-repeat: repeat;
+    background-size: 325px;
+}
+
 p
 {
     font-size: 20px;
 }
+
+#myForm
+{
+    width: 1340px;
+    font-size: 30px;
+}
+
+.answerpls, #fname
+{
+    display: inline-block;
+    vertical-align: top; /* Align elements to the top */
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.answerpls
+{
+    font-size: 50px;
+    text-align: center;
+    padding-left: 35%;
+}
+
+input[type="submit"] 
+{
+    width: 100%; /* Make the submit button fill the width of the form */
+    padding: 10px; /* Add padding inside the button */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Add cursor pointer on hover */
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+   
+}
+
+input[type="submit"]:hover
+{
+    
+    background-color: #143a15
+}
+
+input[type="text"] 
+{
+    width: 100%; /* Make the input fields fill the width of the form */
+    padding: 10px; /* Add padding inside the input fields */
+    margin-bottom: 10px; /* Add some space between the input fields */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    font-size: 30px;
+    height: 50px;
+    background-color: #a0dbff;
+    padding-left: 100px;
+    text-align: center;
+}
+
 
 #Name
 {
@@ -101,7 +165,7 @@ body
 {
     
     width: 1440px;
-    padding-left: 10px;
+    margin-left: 13%;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
@@ -145,7 +209,7 @@ header
     cursor: pointer;
     text-align: center;
     width: 100%;
-    font-size: 20px;
+    font-size: 30px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
 }
   

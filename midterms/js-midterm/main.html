@@ -8,6 +8,8 @@
 </head>
 <body>
 
+
+
 	<div class="grid">
 		<div class="grid-item">
 			<h1>Current Volume:</h1>
@@ -38,8 +40,9 @@
 
 
     <div class="app">
-        <strong><header>Name the Character that said these quotes to increase volume<br><br>Quotes from: The Office</strong> <br>
-        <br>
+        <strong><header>Name the Character that said these quotes to increase volume<br>Quotes from: The Office</strong> <br>
+			<img src="office_logo.png" alt="office logo" width="400" height="200">
+        
         <p>It is case sensitive and you must input the first and last name of each characters spelled exactly correct</p> </header>
         <section class="quotes">
         	<div class="quote-text" id="js-quote-text"></div>
@@ -50,30 +53,48 @@
 		
         
         <section class="controls" >
-			<section class="input_">
+			<!--
 
-			
-				
+			<section class="input_">
 				<input type="text" id="Name" name="Name" placeholder="Answer">
+
+
+				<label for="fname">Answer:</label>
 			</section>
 
+			-->
+			<h1 class="answerpls">Type Your Answer:</h1><br><br>
 
-        	<button type="button" id="js-new-quote" class="new-quote button">
-        		Generate a quote!
-        	</button>
-          
+			<form id="myForm">
+				
+				<input type="text" id="fname" name="fname">
+				<input type="submit" value="Submit">
+				<br>
+			</form>	
+
+			<button type="button" id="js-new-quote" class="new-quote button">
+				Generate a quote!
+			</button>
           <!--
+			
             <button type="button" id="js-tweet" class="twitter button">
             Character name!
             </button>
           -->
           
+          <!--
 
-          <!---->
+				<button 
+							type="button" id="answer-btn" class="answer button">
+								Check Answer
+							</button>
 
-        	<button type="button" id="answer-btn" class="answer button">
-            	Check Answer
-        	</button>
+
+		  -->
+		  	
+
+			
+        	
 
         	<button type="button" id="done" class="done button">
             	Done

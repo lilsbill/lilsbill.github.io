@@ -16,6 +16,20 @@ var links =
     // Add more URLs as needed
 ];
 
+document.getElementById("myForm").addEventListener("submit", function(event) 
+{
+    event.preventDefault(); // Prevent the default form submission
+  
+    // Get form data
+    var fname = document.getElementById("fname").value;
+  
+    typeAnswer(fname)
+
+    // Now you can use fname and lname as variables
+    console.log("Test?", fname);
+});
+
+
 
 let remainingTimeInSeconds = totalTimeInSeconds;
 
@@ -23,8 +37,8 @@ let remainingTimeInSeconds = totalTimeInSeconds;
 
 let timerInterval;
 
-const newBtn = document.querySelector("#answer-btn");
-newBtn.addEventListener('click', typeAnswer);
+//const newBtn = document.querySelector("#answer-btn");
+//newBtn.addEventListener('click', typeAnswer);
 
 const doneBtn = document.querySelector("#done");
 doneBtn.addEventListener('click', doneFun);
@@ -124,9 +138,9 @@ function displayAnswer(answer, imageUrl)
     //image.src=jsonData[0]["https://i.gyazo.com/5a3113ead3f3541731bf721d317116df.jpg"]
 }
 
-function typeAnswer()
+function typeAnswer(word)
 {
-    const word = prompt("WRITE SOMETHING");
+    //const word = prompt("WRITE SOMETHING");
     //newBtn.textContent = word;
     const newText = document.querySelector("#update");
 
